@@ -55,7 +55,7 @@ var main = function() {
         len = exts.length;
 
         // Different options to scroll
-        //page.scrollPosition = {top: page.scrollPosition + 1000, left: 0};
+        //page.scrollPosition = {top: page.scrollPosition + 100, left: 0};
         var res = page.evaluate(function() {
             // Scrolls to the bottom of page
             //window.scrollTo(0, document.body.scrollHeight);
