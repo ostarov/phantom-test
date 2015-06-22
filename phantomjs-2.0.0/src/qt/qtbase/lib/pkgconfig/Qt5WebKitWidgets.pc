@@ -1,0 +1,14 @@
+prefix=/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtbase
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 WebKitWidgets
+Description: Qt WebKitWidgets module
+Version: 5.3.1
+Libs: -L${libdir} -lQt5WebKitWidgets 
+Libs.private: -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtbase/lib -lQt5WebKit -Wl,-whole-archive -lWebKit1 -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/WebKit/release -Wl,-whole-archive -lWebCore -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/WebCore/release -Wl,-whole-archive -lleveldb -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/ThirdParty/leveldb/release -Wl,-whole-archive -lJavaScriptCore -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/JavaScriptCore/release -Wl,-whole-archive -lWTF -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/WTF/release -licudata -lQt5Sql -lQt5Widgets -lQt5Network -lssl -lcrypto -lQt5Gui -ljpeg -lpng -lqtharfbuzzng -lQt5Core -lz -licui18n -licuuc -lm -ldl -lrt -lpthread -lQt5PrintSupport -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtbase/lib -lQt5WebKit -Wl,-whole-archive -lWebKit1 -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/WebKit/release -Wl,-whole-archive -lWebCore -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/WebCore/release -Wl,-whole-archive -lleveldb -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/ThirdParty/leveldb/release -Wl,-whole-archive -lJavaScriptCore -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/JavaScriptCore/release -Wl,-whole-archive -lWTF -Wl,-no-whole-archive -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtwebkit/Source/WTF/release -licudata -lQt5Widgets -lQt5Network -lssl -lcrypto -lQt5Sql -lQt5Gui -ljpeg -lpng -lqtharfbuzzng -lQt5Core -lpthread -lz -licui18n -licuuc -lm -ldl -lrt  
+Cflags: -I${includedir}/QtWebKitWidgets -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Network Qt5Widgets Qt5PrintSupport Qt5WebKit
+

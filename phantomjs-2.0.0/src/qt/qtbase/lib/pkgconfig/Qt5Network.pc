@@ -1,0 +1,14 @@
+prefix=/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtbase
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Network
+Description: Qt Network module
+Version: 5.3.0
+Libs: -L${libdir} -lQt5Network 
+Libs.private: -L/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtbase/lib -lQt5Core -lz -licui18n -licuuc -lm -ldl -lrt -lpthread -lz -lssl -lcrypto  
+Cflags: -I${includedir}/QtNetwork -I${includedir}
+Requires: Qt5Core
+

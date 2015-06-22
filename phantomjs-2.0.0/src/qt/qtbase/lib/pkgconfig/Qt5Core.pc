@@ -1,0 +1,15 @@
+prefix=/home/ostarov/extensions/phantomjs-2.0.0/src/qt/qtbase
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config no-pkg-config fontconfig xlib c++11 accessibility static qpa reduce_exports reduce_relocations clock-gettime clock-monotonic posix_fallocate mremap getaddrinfo ipv6ifname getifaddrs inotify eventfd system-jpeg jpeg system-png png gif system-freetype harfbuzz system-zlib iconv openssl-linked rpath icu concurrent audio-backend release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.3.0
+Libs: -L${libdir} -lQt5Core 
+Libs.private: -lpthread -lz -licui18n -licuuc -lm -ldl -lrt  
+Cflags: -I${includedir}/QtCore -I${includedir}
+
