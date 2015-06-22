@@ -44,7 +44,7 @@ var main = function() {
         var x;
         for (x in exts) {
             fs.write("extensions_accessibility.txt", JSON.stringify(exts[x]) + "\n", 'a');
-            break;
+            //break;
         }
     }
 
